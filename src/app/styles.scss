@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+.App-container {
+    height: 100%;
+    width: 100%;
+
+    * {
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .Context-container {
+        height: calc(100% - 65px);
+    }
+}

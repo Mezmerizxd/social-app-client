@@ -1,0 +1,54 @@
+.Friendslist-container {
+    background-color: #1c1c1c;
+    width: 200px;
+    height: calc(100% - 2px);
+    overflow: auto;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+
+    .Friend {
+        display: flex;
+        height: 40px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 4px;
+
+        img {
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 50%;
+        }
+
+        p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 18px;
+            border-radius: 4px;
+            padding-left: 5px;
+            word-break: keep-all;
+            overflow: hidden;
+        }
+
+        &:hover {
+            background-color: #292929 !important;
+            cursor: pointer;
+        }
+        &:active {
+            background-color: #262626 !important;
+        }
+    }
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}

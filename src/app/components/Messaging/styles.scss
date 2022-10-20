@@ -1,0 +1,71 @@
+.Messaging-container {
+    height: 100%;
+    width: calc(100% - 241px);
+
+    .Messaging-messages-container {
+        width: 100%;
+        overflow: auto;
+        width: calc(100% - 4px);
+        height: calc(100% - 42px);
+
+        .Messaging-messages-message {
+            padding: 10px;
+            display: flex;
+
+            .avatar {
+                img {
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    border-radius: 50%;
+                    height: 50px;
+                }
+            }
+
+            .content {
+                width: calc(100% - 60px);
+                .details {
+                    display: flex;
+                    #username {
+                        font-size: large;
+                    }
+                    #date {
+                        font-size: smaller;
+                        color: rgba(255, 255, 255, 0.667);
+                        padding-top: 3px;
+                    }
+                }
+
+                p {
+                    padding-left: 10px;
+                    height: 100%;
+                    word-wrap: break-word;
+                }
+                #message {
+                    color: rgba(255, 255, 255, 0.8);
+                    padding-top: 5px;
+                }
+            }
+
+            &:hover {
+                background-color: #20252b;
+            }
+        }
+    }
+    .Messaging-actions-container {
+        border-top: 1px rgba(255, 255, 255, 0.4) solid;
+        border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+        height: 40px;
+        width: 100%;
+        input {
+            height: 40px;
+            width: 100%;
+            background-color: #1c1c1c;
+            outline: none;
+            border: none;
+            padding-left: 10px;
+            color: white;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.Settings-sidebar-container {
+    background-color: #1c1c1c;
+    width: 200px;
+    height: 100%;
+    box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
+
+    .Settings-sidebar-section {
+        padding: 10px;
+
+        .Settings-section-title {
+            h1 {
+                font-size: 16px;
+                padding-left: 10px;
+            }
+        }
+        .Settings-section-options {
+            p {
+                font-size: 18px;
+                margin-top: 10px;
+                padding-block: 5px;
+                padding-left: 10px;
+                border-radius: 4px;
+
+                &:hover {
+                    background-color: #292929 !important;
+                    cursor: pointer;
+                }
+                &:active {
+                    background-color: #262626 !important;
+                }
+            }
+        }
+
+        .Settings-section-border {
+            height: 0;
+            margin-top: 10px;
+            border-top: 1px rgba(255, 255, 255, 0.249) solid;
+        }
+    }
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}

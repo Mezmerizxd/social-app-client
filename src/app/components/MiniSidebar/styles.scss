@@ -1,0 +1,40 @@
+.Mini-sidebar-container {
+    background-color: #1c1c1c;
+    width: 40px;
+    height: calc(100% - 2px);
+    overflow-y: auto;
+    border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+
+    .Mini-sidebar-option {
+        width: 40px;
+        text-align: center;
+        margin-top: 10px;
+
+        i {
+            svg {
+                color: rgb(200, 200, 200);
+                width: 30px;
+                height: 30px;
+                transition: 0.2s;
+                &:hover {
+                    color: rgb(255, 255, 255) !important;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+                &:active {
+                    color: rgb(120, 120, 120) !important;
+                }
+            }
+        }
+    }
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}

@@ -1,0 +1,65 @@
+.Form {
+    width: 100%;
+    max-width: 400px;
+    transition: 0.3s;
+    font-family: 'Exo 2', sans-serif;
+    .Form-header {
+        padding: 10px;
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .Form-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Form-footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            font-size: 1.2rem;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+            a {
+                color: rgb(255, 255, 255);
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.StyledInputField {
+    padding: 10px;
+    width: 100%;
+}
+
+// Width for mobile
+@media (max-width: 768px) {
+    .Form {
+        width: 90vw;
+    }
+}
