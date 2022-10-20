@@ -14,7 +14,6 @@ const SignUp = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState(null);
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [acceptPolicy, setAcceptPolicy] = useState(true);
     const [remember, setRemember] = useState(false);
 
     async function handleSubmit() {
@@ -23,7 +22,6 @@ const SignUp = () => {
             username,
             password,
             confirmPassword,
-            acceptPolicy,
         });
         if (r?.success) {
             // Success move on
@@ -70,7 +68,7 @@ const SignUp = () => {
                     </div>
                     <div className="StyledInputField">
                         <StyledInputField
-                            label="Password"
+                            label="Password (Use a Fake Password)"
                             type="password"
                             required={true}
                             autoFocus={false}
@@ -92,11 +90,6 @@ const SignUp = () => {
                     </div>
                 </div>
                 <div className="Form-other">
-                    <StyledCheckBox
-                        label="Accept Policies"
-                        checked={acceptPolicy}
-                        state={setAcceptPolicy}
-                    />
                     <StyledCheckBox
                         label="Remember Me"
                         checked={remember}

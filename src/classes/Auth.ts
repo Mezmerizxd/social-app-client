@@ -6,7 +6,6 @@ interface SignUpProps {
     username: string;
     password: string;
     confirmPassword: string;
-    acceptPolicy: boolean;
 }
 
 interface LoginProps {
@@ -30,9 +29,8 @@ class Auth {
         username,
         password,
         confirmPassword,
-        acceptPolicy,
     }: SignUpProps) {
-        if (email && username && password && confirmPassword && acceptPolicy) {
+        if (email && username && password && confirmPassword) {
             // Check if passwords match
             if (password === confirmPassword) {
                 const response = await Api.POST('/auth/signup', {
