@@ -1,11 +1,11 @@
 .Friendslist-container {
-    background-color: #1c1c1c;
+    background-color: #111111;
     width: 200px;
     height: calc(100% - 2px);
-    overflow: auto;
-    border-top: 1px rgba(255, 255, 255, 0.4) solid;
-    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
-    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    // overflow: auto;
+    // border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-left: 1px rgba(255, 255, 255, 0.4) solid;
 
     .Friend {
         display: flex;

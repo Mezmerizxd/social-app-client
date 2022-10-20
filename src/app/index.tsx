@@ -59,9 +59,7 @@ const App = () => {
                 />
             )}
 
-            {process.env.NODE_ENV !== 'production' && (
-                <Debug app={{ state: state, dispatch: dispatch }} />
-            )}
+            <Debug app={{ state: state, dispatch: dispatch }} />
 
             <Titlebar
                 title={context}

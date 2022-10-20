@@ -33,8 +33,8 @@ const Navigation = ({ app, actions, context, setContext }: NavigationProps) => {
                                 key={action.ctx}
                                 style={
                                     action.ctx === context
-                                        ? { backgroundColor: '#262626' }
-                                        : { backgroundColor: '#1c1c1c' }
+                                        ? { backgroundColor: '#1B1B1B' }
+                                        : { backgroundColor: '#111111' }
                                 }
                             >
                                 <i>
