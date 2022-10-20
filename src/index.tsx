@@ -25,7 +25,7 @@ root.render(
                     {/* Auth */}
                     <Route path="auth/login" element={<Login />} />
                     <Route path="auth/signup" element={<SignUp />} />
-                    {/* Conversel */}
+                    {/* Social App */}
                     <Route path="/app" element={<App />} />
                 </Routes>
             </div>
