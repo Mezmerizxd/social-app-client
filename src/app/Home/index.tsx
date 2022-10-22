@@ -1,42 +1,24 @@
+// Dependencies
+import { useEffect, useState } from "react";
+
+// Classes
+import Api from "../../classes/Api";
+
 // Styles
 import "./styles.scss";
 
 const Home = () => {
+    const [updates, setUpdates] = useState(null);
 
-    const updates = [
-        {
-            repo: 'social-app-client',
-            repoUrl: 'https://github.com/Mezmerizxd/social-app-client',
-            sender: 'Mezmerizxd',
-            pusher: 'Mezmerizxd',
-            commits: [
-              {
-                message: 'test',
-                url: 'https://github.com/Mezmerizxd/social-app-client/commit/4d13feef2b9165921205c6251da471406df3fecc',
-                timestamp: '2022-10-20T18:10:28+01:00',
-                author: 'Mezmerizxd'
-              },
-              {
-                message: 'test',
-                url: 'https://github.com/Mezmerizxd/social-app-client/commit/4d13feef2b9165921205c6251da471406df3fecc',
-                timestamp: '2022-10-20T18:10:28+01:00',
-                author: 'Mezmerizxd'
-              },
-              {
-                message: 'test',
-                url: 'https://github.com/Mezmerizxd/social-app-client/commit/4d13feef2b9165921205c6251da471406df3fecc',
-                timestamp: '2022-10-20T18:10:28+01:00',
-                author: 'Mezmerizxd'
-              },
-              {
-                message: 'test',
-                url: 'https://github.com/Mezmerizxd/social-app-client/commit/4d13feef2b9165921205c6251da471406df3fecc',
-                timestamp: '2022-10-20T18:10:28+01:00',
-                author: 'Mezmerizxd'
-              }
-            ]
-          }
-    ]
+    useEffect(() => {
+        setTimeout(async () => {
+            const response = await Api.POST('/services/check-for-updates');
+            if (response?.data) {
+                setUpdates(JSON.parse(response.data))
+                console.log(response)
+            }
+        });
+    }, []);
 
     return (
         <div className="Home-container">
@@ -48,16 +30,19 @@ const Home = () => {
                             <div className="Update" key={i}>
                                 <p className="Update-repo"><a target="_blank" href={update.repoUrl}>{update.repo}</a></p>
                                 <p className="Update-pusher">- {update.pusher}</p>
-                                {
+                                {JSON.stringify(update.commits, null, 4)}
+                                {/* {
                                     update.commits && update.commits.length > 0 && (
                                         update.commits.map((commit, i) => (
                                             <div className="Update-commit" key={i}>
+                                                <p>ASDA</p>
+                                                {JSON.stringify(update.commits[i])}
                                                 <p className="Commit-message"><a target="_blank" href={commit.url}>{commit.message} - <span>{commit.timestamp}</span></a></p>
                                                 <p className="Commit-author">- {commit.author}</p>
                                             </div>
                                         ))
                                     )
-                                }
+                                } */}
                             </div>
                         ))
                     )
