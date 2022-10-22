@@ -34,8 +34,8 @@ const Debug = ({ app }: DebugProps) => {
                             Socket Address:{' '}
                             <span>
                                 {process.env.NODE_ENV === 'production'
-                                    ? 'http://mezmerizxd.net:3002'
-                                    : 'http://localhost:3002'}
+                                    ? 'http://mezmerizxd.net'
+                                    : 'http://localhost'}
                             </span>
                         </p>
                         <p>
