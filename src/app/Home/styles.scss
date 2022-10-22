@@ -1,9 +1,9 @@
 .Home-container {
-    padding: 20px;
+    height: 100%;
+    width: 600px;
+    overflow-y: auto;
     .Updates-container {
         background: #111111;
-        width: fit-content;
-        height: fit-content;
         padding: 20px;
 
         .Update {
