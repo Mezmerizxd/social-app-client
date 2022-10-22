@@ -35,7 +35,7 @@ const Messaging = ({ app, messages, name, send }: MessagingProps) => {
         <div className="Messaging-container" key={name} id={name}>
             <Loading
                 name={name}
-                loading={messages === null ? false : isLoading}
+                loading={!messages.length ? false : isLoading}
             />
             <div className="Messaging-messages-container">
                 {messages &&

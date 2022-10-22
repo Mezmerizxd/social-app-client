@@ -8,7 +8,7 @@ class Api {
         if (process.env.NODE_ENV === 'production') {
             this.ApiUrl = 'http://mezmerizxd.net/api';
         } else {
-            this.ApiUrl = 'http://localhost:3001/api';
+            this.ApiUrl = 'http://localhost/api';
         }
     }
 
