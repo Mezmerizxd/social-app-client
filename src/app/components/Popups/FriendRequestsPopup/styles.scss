@@ -1,5 +1,5 @@
 .FriendRequestsPopup-container {
-    background-color: #1b1f24;
+    background-color: #111111;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
     padding-top: 20px;
     padding-left: 20px;
@@ -22,7 +22,7 @@
         .FriendRequestsPopup-content-switch {
             display: flex;
             margin-top: 20px;
-            background-color: #12141788;
+            background-color: #22222288;
             border-radius: 4px;
             button {
                 width: 100%;
@@ -32,14 +32,14 @@
                 margin-bottom: 10px;
                 padding: 5px;
                 border-radius: 4px;
-                background-color: #23292f;
+                background-color: #2e2e2e;
                 border: none;
                 color: rgb(220, 220, 220);
                 transition: 0.2s;
                 &:hover {
                     cursor: pointer;
                     color: white;
-                    background-color: #23292fb4;
+                    background-color: #313131b4;
                 }
             }
         }
@@ -52,7 +52,6 @@
                 display: flex;
                 margin-bottom: 20px;
                 height: 40px;
-                background-color: #23292f;
 
                 .FriendRequestsPopup-content-options-username {
                     display: flex;
