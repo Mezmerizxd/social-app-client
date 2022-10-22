@@ -110,9 +110,9 @@ const Friends = ({ app }: FriendsProps) => {
         if (state.selectedFriendDmId !== 0) {
             let socketUrl: string;
             if (process.env.NODE_ENV === 'production') {
-                socketUrl = 'http://mezmerizxd.net';
+                socketUrl = 'http://mezmerizxd.net/sockjs-node';
             } else {
-                socketUrl = 'http://localhost';
+                socketUrl = 'http://localhost/sockjs-node';
             }
             const socket = socketIOClient(socketUrl);
             socket.on(
