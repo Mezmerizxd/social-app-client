@@ -1,10 +1,10 @@
 .Mini-sidebar-container {
-    background-color: #1c1c1c;
+    background-color: #111111;
     width: 40px;
     height: calc(100% - 2px);
     overflow-y: auto;
-    border-top: 1px rgba(255, 255, 255, 0.4) solid;
-    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
 
     .Mini-sidebar-option {
         width: 40px;

@@ -1,11 +1,11 @@
 .Friendslist-container {
-    background-color: #1c1c1c;
+    background-color: #111111;
     width: 200px;
     height: calc(100% - 2px);
-    overflow: auto;
-    border-top: 1px rgba(255, 255, 255, 0.4) solid;
-    border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
-    border-left: 1px rgba(255, 255, 255, 0.4) solid;
+    // overflow: auto;
+    // border-top: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-bottom: 1px rgba(255, 255, 255, 0.4) solid;
+    // border-left: 1px rgba(255, 255, 255, 0.4) solid;
 
     .Friend {
         display: flex;
@@ -44,11 +44,10 @@
         }
     }
 
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old versions of Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                supported by Chrome, Edge, Opera and Firefox */
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }

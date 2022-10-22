@@ -27,6 +27,7 @@ import Appl from '../classes/App';
 // Contexts
 import Settings from './Settings';
 import Friends from './Friends';
+import Home from './Home';
 
 enum ContextPages {
     home = 'Home',
@@ -59,9 +60,7 @@ const App = () => {
                 />
             )}
 
-            {process.env.NODE_ENV !== 'production' && (
-                <Debug app={{ state: state, dispatch: dispatch }} />
-            )}
+            <Debug app={{ state: state, dispatch: dispatch }} />
 
             <Titlebar
                 title={context}
@@ -69,7 +68,7 @@ const App = () => {
             />
 
             <div className="Context-container">
-                {context === ContextPages.home && <p>home</p>}
+                {context === ContextPages.home && <Home />}
                 {context === ContextPages.friends && (
                     <Friends app={{ state: state, dispatch: dispatch }} />
                 )}

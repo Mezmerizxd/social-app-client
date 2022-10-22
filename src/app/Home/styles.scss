@@ -1,0 +1,51 @@
+.Home-container {
+    padding: 20px;
+    .Updates-container {
+        background: #111111;
+        width: fit-content;
+        height: fit-content;
+        padding: 20px;
+
+        .Update {
+            padding: 10px;
+            border-bottom: 1px white solid;
+            .Update-repo {
+                font-size: large;
+                text-align: center;
+                border-top: 1px white solid;
+            }
+            .Update-pusher {
+                text-align: center;
+                color: rgb(180, 180, 180);
+                font-size: small;
+                border-bottom: 1px white solid;
+            }
+
+            .Update-commit {
+                padding: 10px;
+                margin-bottom: 5px;
+                border-bottom: 1px rgba(184, 180, 180, 0.51) solid;
+                .Commit-message {}
+                .Commit-author {
+                    color: rgb(180, 180, 180);
+                    font-size: small;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+
+                span {
+                    color: rgb(180, 180, 180);
+                    font-size: small;
+                }
+                transition: 0.2s;
+                &:hover {
+                    color: rgb(210, 210, 210);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
